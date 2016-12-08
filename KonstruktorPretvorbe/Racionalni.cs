@@ -32,7 +32,14 @@ namespace Vsite.CSharp
         }
 
         // TODO: dodati konstruktor pretvorbe (konverzije) koji stvara racionalni broj iz tipa double i u njemu treba samo pozvati metodu Raščlani. Otkomentirati naredbe u Main metodi koje pozivaju taj konstruktor.
-
+        public static implicit operator Racionalni(double broj)
+        {
+            return new Racionalni(broj);
+        }
+        public static implicit operator Racionalni(long broj)
+        {
+            return new Racionalni(broj);
+        }
 
         private void Raščlani(double broj)
         {
