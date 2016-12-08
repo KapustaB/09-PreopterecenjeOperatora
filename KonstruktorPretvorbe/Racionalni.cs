@@ -40,6 +40,23 @@ namespace Vsite.CSharp
         {
             return new Racionalni(broj);
         }
+        public double ToDouble()
+        {
+            return (double)Brojnik / Nazivnik;
+        }
+
+        public static explicit operator double(Racionalni broj)
+        {
+            return broj.ToDouble();
+        }
+        public long ToInt64()
+        {
+            return (long)(ToDouble());
+        }
+        public static explicit operator long(Racionalni broj)
+        {
+            return broj.ToInt64();
+        }
 
         private void Raščlani(double broj)
         {
