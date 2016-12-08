@@ -11,12 +11,12 @@ namespace Vsite.CSharp
 
             StrukturaDatum sd = new StrukturaDatum(2015, 12, 31);
 
-            //StrukturaDatum sdPrefix = ++sd;
-            //Console.WriteLine(sdPrefix);
+            StrukturaDatum sdprefix = ++sd;
+            Console.WriteLine(sdprefix);
             Console.WriteLine(sd);
 
-            //StrukturaDatum sdPostfix = sd++;
-            //Console.WriteLine(sdPostfix);
+            StrukturaDatum sdPostfix = sd++;
+            Console.WriteLine(sdPostfix);
             Console.WriteLine(sd);
 
             

@@ -9,7 +9,11 @@ namespace Vsite.CSharp
             Brojnik = brojnik;
             Nazivnik = nazivnik;
         }
+        public Racionalni(double broj) : this()
+        {
+            Raščlani(broj);
 
+        }
         public long Brojnik
         {
             get;
